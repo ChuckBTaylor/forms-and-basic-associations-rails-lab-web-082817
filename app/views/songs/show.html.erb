@@ -1,3 +1,5 @@
-<h1>Songs#show</h1>
+<h1>Songs#show page</h1>
 
-Title: <%= @song.title %>
+Title: <%= @song.title %><br>
+Artist: <%= @song.try(:artist).try(:name) %>
+Genre: <%= @song.try(:genre).try(:name) %>
